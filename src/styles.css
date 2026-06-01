@@ -1,0 +1,47 @@
+@import "@visuallyjs/browser-ui/css/visuallyjs.css";
+@import "@visuallyjs/browser-ui-angular/css/visuallyjs-angular.css";
+@import "./kanban.css";
+
+body * {
+  font-family:'Segoe UI', sans-serif;
+}
+
+app-root {
+  height: 100vh;
+  display: block;
+}
+
+vjs-surface {
+  width:100%;
+}
+
+
+
+/* ---------- styles for node types. ---- */
+
+/*
+    Common node styles
+*/
+.vjs-node {
+  transition: outline 0.2s;
+  outline:none;
+
+}
+
+
+/* ----------------------- edges ---------------------------- */
+
+/**
+    Targets the edge path element
+ */
+.vjs-connector path {
+  stroke-width: 2px;
+  stroke:purple;
+}
+
+/**
+    Targets the arrow overlay on the edges.
+ */
+.vjs-overlay {
+  fill:purple;
+}

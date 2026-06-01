@@ -1,0 +1,22 @@
+<div class="vjs-kanban-main">
+  <div class="vjs-kanban-container">
+    <vjs-surface url="/dataset.json" [viewOptions]="viewOptions" [renderOptions]="renderOptions">
+    </vjs-surface>
+  </div>
+
+  <div class="vjs-kanban-rhs">
+
+    <vjs-controls [zoomToExtents]="false" [clear]="false"></vjs-controls>
+
+    <div class="vjs-kanban-controls">
+      <input type="text" class="vjs-kanban-add-column" placeholder="Add column..." (keypress)="addColumn($event)"/>
+    </div>
+
+    <app-kanban-inspector></app-kanban-inspector>
+
+    <div class="description">
+
+    </div>
+  </div>
+
+</div>
